@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta - Veterinaria Amiga</title>
+    <link rel="stylesheet" href="../static/css/styleConsult.css" type="text/css" media="all" />
+    <script src="../static/js/appGlobal.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <header>
+        <h1>Consulta en Veterinaria Mascotaya</h1>
+    </header>
+
+    <section>
+        <h2>Consulta</h2>
+        <form>
+            <label for="con-nombre">Nombre:</label>
+            <input type="text" id="con-nombre" name="nombre" required>
+
+            <label for="con-email">Email:</label>
+            <input type="email" id="con-email" name="email" required>
+
+            <label for="con-servicio">Servicio:</label>
+            <select id="con-servicio" name="servicio" required>
+                <option value="consulta-general">Consulta general</option>
+                <option value="vacunacion">Vacunación</option>
+                <option value="cirugia">Cirugía</option>
+                <option value="estetica">Estética y peluquería</option>
+            </select>
+
+            <label for="con-mensaje">Mensaje:</label>
+            <textarea id="con-mensaje" name="mensaje" required></textarea>
+
+            <button type="submit">Enviar Consulta</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Veterinaria Amiga. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
